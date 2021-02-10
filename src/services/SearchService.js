@@ -10,7 +10,6 @@ const SearchService={
 				'Accept': 'application/json',
 			}
 		  }
-
 		  return await axios.get("http://158.101.229.42:3000/category/getcategory", { headers})//, withCredentials: true
 		  .catch(error=> console.log(error))
         },

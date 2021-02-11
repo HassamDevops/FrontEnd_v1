@@ -6,5 +6,5 @@ COPY ["package.json", "package-lock.json", "./"]
 
 RUN npm install --production
 COPY . .
-EXPOSE 8081
+EXPOSE 3001
 CMD ["npm", "start"]

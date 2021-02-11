@@ -78,7 +78,7 @@ const RegistrationService = {
 		  let finalInput = formData;
 		  console.log(finalInput)
 		  console.log('in reg service')
-	      axios.post(`http://localhost:3000/register/uploadd`, finalInput,headers)
+	      axios.post(`http://158.101.229.42:3000/register/uploadd`, finalInput,headers)
 	      .then((responseData) => {
 		      console.log('responseData:' , responseData);
 		     // return responseData;
@@ -94,7 +94,7 @@ const RegistrationService = {
 				'Accept': 'application/json',
 			}
 		  }
-		  return await axios.get("http://localhost:3000/category/getcategory", { headers, withCredentials: true})
+		  return await axios.get("http://158.101.229.42:3000/category/getcategory", { headers, withCredentials: true})
 		  .catch(error=> console.log(error))
 		}
 };

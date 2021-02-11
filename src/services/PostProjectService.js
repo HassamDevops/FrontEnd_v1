@@ -76,7 +76,7 @@ const PostProjectService={
         let finalInput=formData
         console.log('final input',finalInput)
         console.log('in post project service')
-        axios.post(`http://localhost:3000/project/addproject`,finalInput,{headers,withCredentials: true})
+        axios.post(`http://158.101.229.42:3000/project/addproject`,finalInput,{headers,withCredentials: true})
         .then((responseData)=>{
             console.log('responseData :',responseData)
             callback(responseData)
@@ -91,7 +91,7 @@ const PostProjectService={
 				'Accept': 'application/json',
 			}
 		  }
-		  return await axios.get("http://localhost:3000/category/getcategory", { headers})
+		  return await axios.get("http://158.101.229.42:3000/category/getcategory", { headers})
 		  .catch(error=> console.log(error))
 		}
 

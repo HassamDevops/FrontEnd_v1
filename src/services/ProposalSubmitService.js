@@ -82,7 +82,7 @@ const ProposalSubmitService = {
         let finalInput=formData
         console.log('final input',finalInput)
         console.log('in post project service')
-        axios.post(`http://localhost:3000/bidding/makebid/url${urlid}`,finalInput,{headers,withCredentials: true})
+        axios.post(`http://158.101.229.42:3000/bidding/makebid/url${urlid}`,finalInput,{headers,withCredentials: true})
         .then((responseData)=>{
             console.log('responseData :',responseData)
             callback(responseData)

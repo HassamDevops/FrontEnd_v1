@@ -79,7 +79,7 @@ console.log("Key is : " + name + " and Value is : " + value);
       }
       if(data.searchValue !==undefined || data.searchValue!==null)
       {//all three inputs will come and will be passed ahead
-      await  axios.get('http://localhost:3000/search/search-project',{params:{searchValue:data.searchValue,categoryId:data.categoryId,datePosted:data.datePosted}},{headers,withCredentials: true})
+      await  axios.get('http://158.101.229.42:3000/search/search-project',{params:{searchValue:data.searchValue,categoryId:data.categoryId,datePosted:data.datePosted}},{headers,withCredentials: true})
             .then(responseData => {
               console.log('back from    search data:' , responseData);
              
@@ -92,7 +92,7 @@ console.log("Key is : " + name + " and Value is : " + value);
       console.log('back from search')
       }
       else
-       {     axios.get('http://localhost:3000/project/getprojects',{headers,withCredentials: true})
+       {     axios.get('http://158.101.229.42:3000/project/getprojects',{headers,withCredentials: true})
             .then(responseData => {
               console.log('responseData:' , responseData);
               console.log('href ',this.props.hreff)

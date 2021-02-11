@@ -578,7 +578,7 @@ this.setState({
 //           'Authorization' : `Bearer ${value}`,
 //       }
 //     }
-//     axios.get(`http://localhost:3000/userdata/companyaccount`,{headers,withCredentials: true})
+//     axios.get(`http://158.101.229.42:3000/userdata/companyaccount`,{headers,withCredentials: true})
 //   .then(
 //     response=>{
 

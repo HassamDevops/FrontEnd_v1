@@ -241,7 +241,7 @@ console.log("Key is : " + name + " and Value is : " + value);
         }
       }
             //being used for token value (input.tokenvalue)
-         await   axios.get('http://localhost:3000/login/check-loggedin',{headers,withCredentials: true})
+         await   axios.get('http://158.101.229.42:3000/login/check-loggedin',{headers,withCredentials: true})
             .then(responseData => {
               console.log('responseData:' , responseData);
               // return responseData;

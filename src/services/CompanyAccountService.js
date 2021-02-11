@@ -29,7 +29,7 @@ const CompanyAccountService = {
       }
     }
     let finalInput = input
-    axios.post(`http://localhost:3000/userdata/editdetails`, finalInput, { headers, withCredentials: true })
+    axios.post(`http://158.101.229.42:3000/userdata/editdetails`, finalInput, { headers, withCredentials: true })
       .then((responseData) => {
         console.log('responseData:', responseData);
         // return responseData;
@@ -61,7 +61,7 @@ const CompanyAccountService = {
         'Authorization': `Bearer ${value}`,
       }
     }
-    return await axios.get(`http://localhost:3000/userdata/companyaccount`, { headers, withCredentials: true })
+    return await axios.get(`http://158.101.229.42:3000/userdata/companyaccount`, { headers, withCredentials: true })
       .catch(error => console.log(error));
   },
   getRegDoc: () => {
@@ -92,7 +92,7 @@ const CompanyAccountService = {
         'Authorization': `Bearer ${value}`,
       }
     }
-    axios.get("http://localhost:3000/userdata/getfile", { headers, withCredentials: true, responseType: 'blob' })
+    axios.get("http://158.101.229.42:3000/userdata/getfile", { headers, withCredentials: true, responseType: 'blob' })
       .then(resp => {
         download(resp.data, 'registrationdocument.pdf'); //fileName
       });
@@ -124,7 +124,7 @@ const CompanyAccountService = {
       }
     }
     let finalInput = input
-    axios.post(`http://localhost:3000/userdata/passwordreset`, finalInput, { headers, withCredentials: true })
+    axios.post(`http://158.101.229.42:3000/userdata/passwordreset`, finalInput, { headers, withCredentials: true })
       .then((responseData) => {
         console.log('responseData:', responseData);
         // return responseData;
@@ -141,7 +141,7 @@ const CompanyAccountService = {
 				'Accept': 'application/json',
 			}
 		  }
-		  return await axios.get("http://localhost:3000/category/getcategory", { headers})
+		  return await axios.get("http://158.101.229.42:3000/category/getcategory", { headers})
 		  .catch(error=> console.log(error))
 		}
 

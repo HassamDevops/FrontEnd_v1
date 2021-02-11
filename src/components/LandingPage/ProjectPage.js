@@ -354,7 +354,7 @@ console.log("Key is : " + name + " and Value is : " + value);
  }
 console.log('url id: ', urlid)
 console.log('id: ', id)
-  axios.get(`http://localhost:3000/bidding/bidfiles/url${id}`,{headers,withCredentials: true, responseType: 'arraybuffer'})
+  axios.get(`http://158.101.229.42:3000/bidding/bidfiles/url${id}`,{headers,withCredentials: true, responseType: 'arraybuffer'})
   .then(response=>{download(response.data, 'download.zip')})
 }
 
@@ -398,7 +398,7 @@ console.log("Key is : " + name + " and Value is : " + value);
    }
  }
 console.log('url id: ', urlid)
-  axios.get(`http://localhost:3000/project/projectfiles/url${urlid}`,{headers,withCredentials: true, responseType: 'arraybuffer'})
+  axios.get(`http://158.101.229.42:3000/project/projectfiles/url${urlid}`,{headers,withCredentials: true, responseType: 'arraybuffer'})
   .then(response=>{download(response.data, 'download.zip')})  
 }
   
@@ -438,7 +438,7 @@ console.log("Key is : " + name + " and Value is : " + value);
     }
   }
 
-  axios.get(`http://localhost:3000/project/project-page/url${urlid}`,{headers,withCredentials: true})
+  axios.get(`http://158.101.229.42:3000/project/project-page/url${urlid}`,{headers,withCredentials: true})
   .then(
     response=>{
 
@@ -456,7 +456,7 @@ console.log("Key is : " + name + " and Value is : " + value);
     })
 
 
-    axios.get(`http://localhost:3000/bidding/bid-data/url${urlid}`,{headers,withCredentials: true})
+    axios.get(`http://158.101.229.42:3000/bidding/bid-data/url${urlid}`,{headers,withCredentials: true})
     .then(
       response=>{
   

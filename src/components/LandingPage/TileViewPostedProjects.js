@@ -66,7 +66,7 @@ console.log("Key is : " + name + " and Value is : " + value);
 				'Authorization' : `Bearer ${value}`,
 	        }
 	      }
-          axios.get('http://localhost:3000/project/getbproject',{headers,withCredentials: true})
+          axios.get('http://158.101.229.42:3000/project/getbproject',{headers,withCredentials: true})
           .then(responseData => {
               console.log('responseData:' , responseData);
               // return responseData;

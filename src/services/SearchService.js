@@ -10,7 +10,7 @@ const SearchService={
 				'Accept': 'application/json',
 			}
 		  }
-		  return await axios.get("http://158.101.229.42:3000/category/getcategory", { headers})//, withCredentials: true
+		  return await axios.get("http://localhost:3000/category/getcategory", { headers})//, withCredentials: true
 		  .catch(error=> console.log(error))
         },
     sendSearchData:function(input,callback)
@@ -24,7 +24,7 @@ const SearchService={
 		 
 		  console.log(input)
 		  console.log('in sendsearchdata service')
-	      axios.post(`http://158.101.229.42:3000/search/search-project`, input,headers)
+	      axios.post(`http://localhost:3000/search/search-project`, input,headers)
 	      .then((responseData) => {
 		      console.log('responseData:' , responseData);
 		     // return responseData;
